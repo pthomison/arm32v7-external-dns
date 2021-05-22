@@ -13,9 +13,9 @@
 # limitations under the License.
 
 # builder image
-ARG ARCH
+ARG ARCH=arm32v7
 FROM golang:1.16 as builder
-ARG ARCH
+ARG ARCH=arm32v7
 
 WORKDIR /sigs.k8s.io/external-dns
 
